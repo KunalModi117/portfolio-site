@@ -5,15 +5,21 @@ export const personalInfo = {
     "I craft modern, high-performance applications using React, Next.js, and a powerful blend of cutting-edge frontend technologies.",
   bio: "I am a frontend developer passionate about building offline-ready, scalable, and fast applications. I specialize in React, Next.js, and a range of modern frontend tools that bring speed, accessibility, and delightful experiences to users.",
   avatar: "/profileImage.jpeg",
-}
+};
 
 export const projects = [
   {
     id: 1,
     title: "Discord Clone",
     description:
-      "A fully functional real-time chat application inspired by Discord, featuring text channels, direct messaging, and instant updates without page reloads. Includes emoji reactions, file sharing, and user presence indicators.",
-    techStack: ["NextJS", "WebSockets", "TailwindCSS", "ExpressJs", "PostgreSQL"],
+      "A fully functional real-time chat application inspired by Discord, featuring text channels, messaging, and instant updates without page reloads. Includes file sharing, and user presence indicators.",
+    techStack: [
+      "NextJS",
+      "WebSockets",
+      "TailwindCSS",
+      "ExpressJs",
+      "PostgreSQL",
+    ],
     link: "https://discord-clone-dusky-iota.vercel.app",
     image: "/discordImage.jpg",
     alignment: "left",
@@ -31,8 +37,14 @@ export const projects = [
     id: 3,
     title: "CCMT (Central Chinmaya Mission Trust)",
     description:
-      "Chinmaya Mission's global platform for displaying upcoming events, spiritual itineraries, and educational courses across its worldwide centers. Supports multiple views (calendar, grid, list) and advanced filtering.",
-    techStack: ["Next.js", "TypeScript", "Strapi CMS", "TailwindCSS", "Payload CMS"],
+      "Chinmaya Mission's global platform for displaying upcoming events, spiritual itineraries, and educational courses across its worldwide centers. Supports multiple views (calendar, grid, list) and advanced filtering for swami's itineraries",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Strapi CMS",
+      "TailwindCSS",
+      "Payload CMS",
+    ],
     link: "https://www.chinmayamission.com",
     image: "/CCMT-Homepage.png",
     alignment: "left",
@@ -41,7 +53,7 @@ export const projects = [
     id: 4,
     title: "Paisa Pal",
     description:
-      "A financial management tool for creating, tracking, and redeeming vouchers with real-time validation. Features analytics dashboards and redemption workflows for both consumers and merchants.",
+      "A financial management tool designed to help you create and track budgets, with powerful analytics dashboards, custom categories, and detailed expense tracking.",
     techStack: ["Next.js", "React Hook Form", "MongoDB"],
     link: "https://paisa-pal-gamma.vercel.app",
     image: "/paisaPal.png",
@@ -52,23 +64,23 @@ export const projects = [
     title: "React Chat App",
     description:
       "A WhatsApp-like microservice chat module that can be embedded into any app, complete with emoji reactions, message history persistence, and responsive UI.",
-    techStack: ["React", "WebSockets", "IndexedDB"],
+    techStack: ["ReactJs", "WebSockets", "IndexedDB", "TailwindCSS"],
     image: "/reactChatApp.png",
     alignment: "left",
   },
-]
+];
 
 export const techStackCategories = {
   frontend: {
     title: "Frontend",
     technologies: [
       {
-        name: "HTML5",
+        name: "HTML",
         icon: "🌐",
         color: "#E34F26",
       },
       {
-        name: "CSS3",
+        name: "CSS",
         icon: "🎨",
         color: "#1572B6",
       },
@@ -90,7 +102,7 @@ export const techStackCategories = {
       {
         name: "Next.js",
         icon: "▲",
-        color: "#000000",
+        color: "#ffffff",
       },
       {
         name: "TailwindCSS",
@@ -100,7 +112,7 @@ export const techStackCategories = {
       {
         name: "Motion One",
         icon: "🎭",
-        color: "#FF6B6B",
+        color: "#F7DF1E",
       },
       {
         name: "PWA",
@@ -120,7 +132,7 @@ export const techStackCategories = {
       {
         name: "Express.js",
         icon: "🚂",
-        color: "#000000",
+        color: "#ffffff",
       },
       {
         name: "Strapi",
@@ -130,91 +142,68 @@ export const techStackCategories = {
       {
         name: "PayloadCMS",
         icon: "📦",
-        color: "#000000",
+        color: "#ffffff",
       },
       {
         name: "WebSockets",
         icon: "🔌",
-        color: "#010101",
+        color: "#25C2A0",
       },
     ],
   },
   databases: {
     title: "Databases",
     technologies: [
-      {
-        name: "MongoDB",
-        icon: "🍃",
-        color: "#47A248",
-      },
-      {
-        name: "IndexedDB",
-        icon: "💾",
-        color: "#FF6B35",
-      },
-      {
-        name: "NoSQL",
-        icon: "🗄️",
-        color: "#4DB33D",
-      },
+      { name: "PostgreSQL", icon: "🐘", color: "#336791" },
+      { name: "MongoDB", icon: "🍃", color: "#47A248" },
+      { name: "IndexedDB (Client-side)", icon: "💾", color: "#FF6B35" },
+      { name: "NoSQL", icon: "🗄️", color: "#4DB33D" },
     ],
   },
   tools: {
     title: "Tools & Libraries",
     technologies: [
-      {
-        name: "TanStack Query",
-        icon: "🔄",
-        color: "#FF4154",
-      },
-      {
-        name: "APIs",
-        icon: "🔗",
-        color: "#FF6B6B",
-      },
-      {
-        name: "JSON",
-        icon: "📋",
-        color: "#000000",
-      },
+      { name: "TanStack Query", icon: "🔄", color: "#FF4154" },
+      { name: "APIs (REST & GraphQL)", icon: "🔗", color: "#FF6B6B" },
+      { name: "JSON Data Handling", icon: "📋", color: "#ffffff" },
     ],
   },
-}
+};
 
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "Product Manager at TechCorp",
-    avatar: "/professional-woman-avatar.png",
+    name: "Virendra Rathod",
+    role: "Product Manager at Webelight Solutions",
+    avatar: "/productLead.jpeg",
     feedback:
-      "Kunal delivered an exceptional React application that exceeded our performance expectations. His attention to offline functionality was remarkable.",
+      "Kunal's commitment, from working weekends to those long stretches last week, was phenomenal in getting the CCMT website live.",
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "CTO at StartupXYZ",
-    avatar: "/professional-man-avatar.png",
+    name: "Manish Giri Goswami",
+    role: "React Lead at Webelight Solutions",
+    avatar: "/reactLead.png",
     feedback:
-      "Working with Kunal was a game-changer. His Next.js expertise helped us achieve 40% faster load times and improved user engagement.",
+      "Kunal did a stellar job on flawlessly executing a complex design and navigating an intricate UI structure with advanced design requirements, ensuring UI excellence and attention to detail.",
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
-    role: "Lead Designer at CreativeStudio",
-    avatar: "/professional-woman-designer-avatar.png",
+    name: "Jayesh Anandani",
+    role: "CEO & Co-founder at Webelight Solutions",
+    avatar: "/CEO.png",
     feedback:
-      "Kunal perfectly translated our designs into pixel-perfect, performant web applications. His code quality is outstanding.",
+      "Kunal excelled in his knowledge and kept up the spirits throughout the entire road to live. His dedication to learning and upscaling at a young age was truly commendable.",
   },
   {
     id: 4,
-    name: "David Kumar",
-    role: "Founder at InnovateLab",
-    avatar: "/professional-entrepreneur-avatar.png",
+    name: "Richa Pandya",
+    role: "Devops Lead at Webelight Solutions",
+    avatar: "/placeholder-user.jpg",
     feedback:
-      "Kunal's PWA development skills are top-notch. He built us an offline-first application that works flawlessly across all devices.",
+      "Kunal's commitment to handling challenges with grace and stepping up when it matters most has been invaluable in driving the CCMT project forward.",
   },
-]
+];
 
 export const faqs = [
   {
@@ -241,10 +230,14 @@ export const faqs = [
     answer:
       "Yes, I offer ongoing maintenance and support packages to ensure your application stays up-to-date and performs optimally.",
   },
-]
+];
 
 export const socialLinks = [
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/kunal-modi-898838204", icon: "💼" },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/kunal-modi-898838204",
+    icon: "💼",
+  },
   { name: "GitHub", url: "https://github.com/KunalModi117", icon: "🐙" },
-  { name: "Email", url: "mailto:kunalmodi117@gmail.com", icon: "📧" },
-]
+  { name: "Email", url: "mailto:kunalmodi117@gmail.com?subject=Opportunity%20to%20Collaborate%20—%20Found%20Your%Work%20Impressive", icon: "📧" },
+];

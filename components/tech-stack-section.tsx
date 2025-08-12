@@ -27,11 +27,11 @@ export default function TechStackSection() {
                 <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto"></div>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+              <div className="flex gap-6 justify-center flex-wrap">
                 {category.technologies.map((tech, index) => (
                   <div
                     key={tech.name}
-                    className="group relative"
+                    className="group relative max-w-[235px] w-full"
                     style={{
                       animationDelay: `${categoryIndex * 200 + index * 100}ms`,
                     }}
@@ -58,7 +58,7 @@ export default function TechStackSection() {
                       <div
                         className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
                         style={{
-                          background: `radial-gradient(circle at center, ${tech.color}15 0%, transparent 70%)`,
+                          background: `radial-gradient(circle at center, ${tech.color}70 0%, transparent 90%)`,
                         }}
                       ></div>
                     </div>
@@ -73,7 +73,7 @@ export default function TechStackSection() {
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 text-gray-400">
             <div className="w-8 h-0.5 bg-gradient-to-r from-transparent to-white/30"></div>
-            <span className="text-sm">Always learning, always building</span>
+            <span className="text-sm">Always learning. Always creating</span>
             <div className="w-8 h-0.5 bg-gradient-to-l from-transparent to-white/30"></div>
           </div>
         </div>

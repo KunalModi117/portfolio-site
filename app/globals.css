@@ -144,20 +144,16 @@
   animation: gradient-shift 8s ease infinite;
 }
 
-/* Shooting star animation - left to right */
 @keyframes shooting-star {
   0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  10% {
+    transform: translate(0, 0) rotate(45deg);
     opacity: 1;
   }
-  90% {
+  70% {
     opacity: 1;
   }
   100% {
-    transform: translateX(calc(100vw + 100px));
+    transform: translate(600px, 600px) rotate(45deg);
     opacity: 0;
   }
 }
@@ -176,12 +172,17 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 30px;
+  width: 210px;
   height: 1px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
-  transform: translateX(2px);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  transform: translateX(4px);
 }
 
+/* Position and timing remain same */
 .shooting-star-1 {
   top: 15%;
   left: -100px;
@@ -219,7 +220,7 @@
   }
   50% {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.7);
   }
 }
 

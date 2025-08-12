@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Featured Case Studies
+            Featured Projects
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Explore my latest projects showcasing modern web development and
@@ -24,7 +24,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="space-y-16">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Card
               key={project.id}
               className="bg-black/30 border-gray-700 hover:bg-black/50 transition-all duration-500 hover:shadow-2xl hover:shadow-white/10 group overflow-hidden backdrop-blur-sm"

@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-black via-gray-800 to-black animated-gradient">
+    <section className="py-20 bg-gradient-to-br from-black via-gray-800 to-black animated-gradient" id="about">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

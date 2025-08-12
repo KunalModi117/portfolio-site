@@ -81,7 +81,7 @@ export default function Footer() {
               <h4 className="text-lg font-semibold text-white">Get In Touch</h4>
               <p className="text-gray-400">Ready to start your next project? Let's build something amazing together.</p>
               <a
-                href="mailto:kunalmodi117@gmail.com"
+                href="mailto:kunalmodi117@gmail.com?subject=Opportunity%20to%20Collaborate%20—%20Found%20Your%Work%20Impressive"
                 className="inline-block bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-white/25"
               >
                 Start a Project
